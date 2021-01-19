@@ -1,0 +1,80 @@
+.adminimal-admin-toolbar {
+  .block.block--abogados-main-menu {
+    margin-top: 79px;
+  }
+}
+
+.block.block--abogados-main-menu {
+  width           : 100%;
+  height          : 97px;
+  background-color: rgba(1, 17, 38, 0.89);
+  transition      : all 0.5s;
+  position        : fixed;
+  top             : 44px;
+  left            : 0px;
+  display         : block;
+  z-index         : 1000;
+  width           : 100%;
+
+  .main-menu {
+    width    : 100%;
+    height   : 100%;
+    margin   : 0 auto;
+    padding  : 0 20px;
+    max-width: 1200px;
+    position : relative;
+
+
+    .main-brand {
+      width         : 100%;
+      height        : 100%;
+      max-width     : 350px;
+      vertical-align: top;
+      display       : inline-block;
+      transition    : all 0.5s;
+
+      .navbar-brand {
+        padding       : 0;
+        position      : absolute;
+        bottom        : 0;
+        padding-bottom: 20px;
+
+        img {
+          width     : 270px;
+          transition: all 0.3s linear
+        }
+      }
+    }
+
+    .content-menu {
+      float: right;
+
+      .menu-main.level-1 {
+        padding   : 50px 0 0 0;
+        transition: 0.5s all;
+        margin    : 0;
+        list-style: none;
+
+        .item-navegation {
+          padding-bottom: 23px;
+          box-sizing    : border-box;
+          margin        : 0 15px;
+          position      : relative;
+          display       : inline-block;
+
+          .link-item {
+            color          : #fcfcfc;
+            text-decoration: none;
+            font-weight    : 500;
+            font-size      : 1rem;
+            transition     : all 0.3s linear;
+          }
+
+          .menu-level-2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

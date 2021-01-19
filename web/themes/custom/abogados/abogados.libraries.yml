@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/abogados.style.css: {}
+  js:
+    assets/js/abogados.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

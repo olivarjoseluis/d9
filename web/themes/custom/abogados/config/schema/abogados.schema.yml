@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Abogados theme.
+
+abogados.settings:
+  type: theme_settings
+  label: 'Abogados settings'

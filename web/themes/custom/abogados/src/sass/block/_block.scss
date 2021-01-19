@@ -1,0 +1,68 @@
+.social-network-block {
+    background: rgba(21, 44, 64, 0.89);
+  
+    .social-network {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 10px 20px;
+      max-width: 1200px;
+      display: flex;
+      position: relative;
+  
+      .contact-information-box {
+        width: 70%;
+        float: left;
+  
+        .contact-information {
+          padding: 0 20px;
+  
+          .item-information {
+            display: inline-block;
+            padding-right: 10px;
+  
+            &:last-child {
+              padding-right: 0px;
+            }
+  
+            p {
+              margin: 0;
+            }
+  
+            p, a {
+              color: $blanco-azul;
+            }
+          }
+        }
+      }
+  
+      .social-networks {
+        width: 30%;
+        float: left;
+        text-align: right;
+  
+        a {
+          color: $blanco-azul;
+          margin-right: 10px;
+          text-decoration: none;
+          padding: 2px 5px;
+          background: transparent;
+          position: relative; 
+          &:last-child {
+            margin-right: 0px;
+          }
+  
+          &:hover {
+            svg{
+              transform: scale(1.35);
+            }
+          }
+          svg{
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+  
+  

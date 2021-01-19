@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Template for a Block component.
+ *
+ * Available config:
+ * - html_tag: The HTML tag for the block.
+ * - utility_classes: An array of utility classes.
+ */
+#}
+{% set classes = [
+  'block',
+  'block--' ~ bundle|clean_class,
+  'social-network-block',
+] %}
+<div {{ attributes.addClass(classes) }}>
+  <div class="social-network">
+    <div class="contact-information-box">
+      {{ content.field_contact_information_block }}
+    </div>
+    <div class="social-networks">
+      {{ content.field_social_networks_block }}
+    </div>
+  </div>
+</div>
