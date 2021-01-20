@@ -2,9 +2,14 @@ style:
   version: VERSION
   css:
     theme:
+      assets/lib/owlcarousel/owl.carousel.min.css: {}
       assets/css/abogados.style.css: {}
+      assets/lib/animate/animate.min.css: {}
+      https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap: {type: external}
   js:
+    assets/lib/owlcarousel/owl.carousel.min.js: {}
     assets/js/abogados.script.js: {}
   dependencies:
     - core/jquery
     - core/drupal
+    - core/drupal.once

@@ -1,5 +1,13 @@
-<section class="primary-slider">
-{% for slider in paragraph.field_primary_slider %}
-
-{% endfor %}
+<section id="primary-slider">
+<div class="primary-slider owl-carousel owl-theme">
+				{% for item in paragraph.field_primary_slider %}
+					<div class="item">
+						<div class="img-slider-principal">
+							<picture>
+								<img src=" {{ file_url(item.entity.field_image.entity.fileuri) }}" alt="{{ item.entity.field_image.alt }}">
+							</picture>
+						</div>
+					</div>
+				{% endfor %}
+	</div>
 </section>
