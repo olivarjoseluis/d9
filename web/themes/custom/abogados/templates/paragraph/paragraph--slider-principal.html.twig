@@ -1,13 +1,20 @@
 <section id="primary-slider">
-<div class="primary-slider owl-carousel owl-theme">
-				{% for item in paragraph.field_primary_slider %}
-					<div class="item">
-						<div class="img-slider-principal">
-							<picture>
-								<img src=" {{ file_url(item.entity.field_image.entity.fileuri) }}" alt="{{ item.entity.field_image.alt }}">
-							</picture>
-						</div>
+	<div class="primary-slider owl-carousel owl-theme">
+		{% for item in paragraph.field_primary_slider %}
+			{% set opacidad=(item.entity.field_opacity is not empty) ? item.entity.field_opacity.value / 100 : 0 %}
+			<div class="item">
+				<div class="layer-opacity" style="background-color: rgba(21, 44, 64, {{opacidad}});"></div>
+				<div class="content-text-slider-primary">
+					<div class="text-slider">
+						<h2>{{item.entity.field_title.value}}</h2>
+						{{item.entity.field_summary.value|raw}}
+						<a href="{{ item.entity.field_button.0.url }}" target="_blank" class="btn btn-line ">{{item.entity.field_button.title}}</a>
 					</div>
-				{% endfor %}
+				</div>
+				<picture>
+					<img src=" {{ file_url(item.entity.field_image.entity.fileuri) }}" alt="{{ item.entity.field_image.alt }}">
+				</picture>
+			</div>
+		{% endfor %}
 	</div>
 </section>

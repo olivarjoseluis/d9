@@ -1,0 +1,46 @@
+#primary-slider {
+    .item {
+        width          : 100%;
+        position       : relative;
+        align-items    : center;
+        justify-content: center;
+
+        .layer-opacity {
+            top     : 0;
+            left    : 0;
+            width   : 100%;
+            height  : 100%;
+            position: absolute;
+        }
+
+        .content-text-slider-primary {
+            top       : 45%;
+            left      : 50%;
+            z-index   : 1;
+            padding   : 0 20px;
+            margin-top: 47px;
+            position  : absolute;
+            transform : translate(-50%, -50%);
+            width     : 100%;
+            max-width : 75%;
+
+            .text-slider {
+                width    : 100%;
+                max-width: 60%;
+
+                h2 {
+                    font-weight: 600;
+                    font-size  : 2.8rem;
+                    line-height: 2.8rem;
+                    text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+                }
+
+                p {
+                    text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+                    font-size  : 1.2rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
