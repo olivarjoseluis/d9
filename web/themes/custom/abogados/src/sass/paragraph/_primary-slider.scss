@@ -41,6 +41,32 @@
                     font-weight: 500;
                 }
             }
+
+            .text-slider.right {
+                float: right;
+
+                h2 {
+                    text-align: right;
+                }
+
+                p {
+                    text-align: right;
+                }
+
+                a {
+                    float: right;
+                }
+            }
+
+            .text-slider.center {
+                margin: 0 auto;
+
+                h2,
+                p,
+                .container-btn {
+                    text-align: center;
+                }
+            }
         }
     }
 }

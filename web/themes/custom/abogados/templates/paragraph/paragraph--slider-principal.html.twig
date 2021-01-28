@@ -5,10 +5,13 @@
 			<div class="item">
 				<div class="layer-opacity" style="background-color: rgba(21, 44, 64, {{opacidad}});"></div>
 				<div class="content-text-slider-primary">
-					<div class="text-slider">
+					<div class="text-slider {{item.entity.field_orientation.value}}">
 						<h2>{{item.entity.field_title.value}}</h2>
 						{{item.entity.field_summary.value|raw}}
-						<a href="{{ item.entity.field_button.0.url }}" target="_blank" class="btn btn-line ">{{item.entity.field_button.title}}</a>
+						<div class="container-btn">
+<a href="{{ item.entity.field_button.0.url }}" target="_blank" class="btn btn-{{item.entity.field_button_type.value}}">{{item.entity.field_button.title}}</a>
+
+						</div>
 					</div>
 				</div>
 				<picture>
