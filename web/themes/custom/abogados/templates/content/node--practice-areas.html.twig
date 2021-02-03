@@ -1,0 +1,25 @@
+<section class="practice-areas">
+	<section class="initial-banner">
+		<picture>
+			<img src="{{ file_url(node.field_image.entity.fileuri) }}" alt="{{ node.field_image.alt }}">
+		</picture>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="loyout-opacity"></div>
+					<h1>{{label}}</h1>
+					{{node.field_motto.value|raw}}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+                    {{content.field_bloques}}
+                </div>
+			</div>
+		</div>
+	</section>
+</section>
