@@ -14,12 +14,13 @@
   'social-network-block',
 ] %}
 <div {{ attributes.addClass(classes) }}>
-  <div class="social-network">
-    <div class="contact-information-box">
-      {{ content.field_contact_information_block }}
-    </div>
-    <div class="social-networks">
-      {{ content.field_social_networks_block }}
-    </div>
-  </div>
+	<div class="social-network">
+		<p class="title-footer">Contacto</p>
+		<div class="contact-information-box">
+			{{ content.field_contact_information_block }}
+		</div>
+		<div class="social-networks">
+			{{ content.field_social_network_block}}
+		</div>
+	</div>
 </div>

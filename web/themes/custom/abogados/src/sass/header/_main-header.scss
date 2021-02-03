@@ -1,110 +1,35 @@
 body.adminimal-admin-toolbar {
   .main-header {
     margin-top: 79px;
+
+    .block.block--abogados-main-menu {
+      background-color: rgba($azul-3, .95);
+    }
   }
 }
 
 
 
 .main-header.scroll-header {
-  top: -45px;
-
   .block.block--abogados-main-menu {
     background-color: rgba($azul-3, .89);
   }
 }
 
 .main-header {
-  top               : 0;
-  z-index           : 9;
-  width             : 100%;
-  height            : 135px;
+  top    : 0;
+  z-index: 9;
+  width  : 100%;
+
   position          : fixed;
   //background-color: rgba(1, 17, 38, 0.89);
   transition        : all .5s;
-
-  .social-network-block {
-    transition      : all 0.5s;
-    top             : 0;
-    width           : 100%;
-    height          : 45px;
-    z-index         : 999;
-    position        : absolute;
-    background-color: rgba(21, 44, 64, 1);
-
-    .social-network {
-      width    : 100%;
-      height   : 100%;
-      margin   : 0 auto;
-      padding  : 10px 20px;
-      max-width: 1200px;
-      display  : flex;
-      position : relative;
-
-      .contact-information-box {
-        width: 70%;
-        float: left;
-
-        .contact-information {
-          padding: 0 20px;
-
-          .item-information {
-            display      : inline-block;
-            padding-right: 10px;
-
-            &:last-child {
-              padding-right: 0px;
-            }
-
-            p {
-              margin: 0;
-            }
-
-            p,
-            a {
-              color: $blanco-azul;
-            }
-          }
-        }
-      }
-
-      .social-networks {
-        width     : 30%;
-        float     : left;
-        text-align: right;
-
-        a {
-          color          : $blanco-azul;
-          margin-right   : 10px;
-          text-decoration: none;
-          padding        : 2px 5px;
-          background     : transparent;
-          position       : relative;
-
-          &:last-child {
-            margin-right: 0px;
-          }
-
-          &:hover {
-            svg {
-              transform: scale(1.35);
-            }
-          }
-
-          svg {
-            transition: all .5s;
-          }
-        }
-      }
-    }
-  }
 
   .block.block--abogados-main-menu {
     width     : 100%;
     height    : 90px;
     transition: all 0.5s;
     position  : relative;
-    top       : 45px;
 
     .main-menu {
       width    : 100%;
@@ -190,6 +115,7 @@ body.adminimal-admin-toolbar {
 
                 &:hover {
                   background-color: rgba($blanco-azul, .79);
+
                   .link-item-1 {
                     color: $azul-3;
                   }

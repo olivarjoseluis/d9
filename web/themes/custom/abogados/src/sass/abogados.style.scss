@@ -55,12 +55,13 @@
 
 // Other
 // -----------------------------------------------------------------------------
-@import "block/block";
 @import "content/node.page";
 @import "content/node.article";
 
 //header
 @import "header/main-header";
+//footer
+@import "footer/footer";
 
 //paragraphs
 @import 'paragraph/primary-slider';

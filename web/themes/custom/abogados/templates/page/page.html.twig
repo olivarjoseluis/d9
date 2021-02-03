@@ -4,6 +4,7 @@
  * Template for the main page.
  */
 #}
+<body class="layers-site">
 <header class="main-header">
 	{% block branding %}
 		{% if page.navbar_branding %}
@@ -26,8 +27,6 @@
 	{% endblock %}
 </header>
 <div class="page">
-
-
 	<main class="pb-5">
 		{% if page.header %}
 			<header class="page__header mb-3">
@@ -45,10 +44,11 @@
 	{% if page.footer %}
 		<footer class="page__footer">
 			<div class="container">
-				<div class="d-flex justify-content-md-between align-items-md-center">
+				<div class="d-flex justify-content-md-between">
 					{{ page.footer }}
 				</div>
 			</div>
 		</footer>
 	{% endif %}
 </div>
+</body>

@@ -17,9 +17,7 @@
 {{ menu.build_menu_link_content(attributes, menu_link_content, show_item_link, content, elements) }}
 
 {% macro build_menu_link_content(attributes, menu_link_content, show_item_link, content, elements) %}
-	<div class="social-network-icon">
-		{% if content %}
-			{{ content }}
-		{% endif %}
-	</div>
+	{% if content %}
+		{{ content }}
+	{% endif %}
 {% endmacro %}

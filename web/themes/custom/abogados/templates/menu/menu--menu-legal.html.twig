@@ -1,0 +1,12 @@
+{% set items = simplify_menu('menu-legal') %}
+
+<div class="legal-menu">
+	<p class="title-footer">Menú legal</p>
+	<ul class="legal-menu-list">
+		{% for item in items.menu_tree %}
+			<li class="item-legal-menu">
+				<a class="link-item" href="{{ item.url }}">{{ item.text }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
