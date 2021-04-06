@@ -1,3 +1,4 @@
+//Menu en sección administrativa
 body.adminimal-admin-toolbar {
   .main-header {
     margin-top: 79px;
@@ -8,11 +9,34 @@ body.adminimal-admin-toolbar {
   }
 }
 
+//Menú en sección de Inicio después del Header
+.path-frontpage {
+  .main-header.scroll-header {
+    .block.block--abogados-main-menu {
+      background-color: rgba($azul-3, .95);
+    }
+  }
+}
 
+//Menú en sección de Inicio
+.path-frontpage {
+  .main-header {
+    .block.block--abogados-main-menu {
+      background-color: rgba($azul-3, .75);
+    }
+  }
+}
 
-.main-header.scroll-header {
-  .block.block--abogados-main-menu {
-    background-color: rgba($azul-3, .89);
+//Menú en noticias
+.page-node-type-new {
+  .main-header{
+    .block.block--abogados-main-menu {
+      background-color: rgba($azul-3, .95);
+    }
+  }
+
+  .page {
+    margin-top: 120px;
   }
 }
 

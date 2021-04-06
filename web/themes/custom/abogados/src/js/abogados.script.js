@@ -29,6 +29,14 @@ import 'bootstrap';
         }
       });
     });
+
+    imagebox.options({
+      info: false,
+      swipeToChange: true,
+      swipeToClose: true,
+      keyControls: true,
+      closeEverywhere: true
+    });
   });
 
 })(jQuery, Drupal);

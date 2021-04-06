@@ -18117,6 +18117,13 @@ __webpack_require__.r(__webpack_exports__);
         }
       });
     });
+    imagebox.options({
+      info: false,
+      swipeToChange: true,
+      swipeToClose: true,
+      keyControls: true,
+      closeEverywhere: true
+    });
   });
 })(jQuery, Drupal);
 

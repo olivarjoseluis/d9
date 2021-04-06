@@ -1,0 +1,25 @@
+<section class="pictures-gallery mt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div class="header header-gellery text-center">
+					<h3>{{paragraph.field_title.value}}</h3>
+					{{paragraph.field_summary.value|raw}}
+				</div>
+				<div class="content-gallery">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="row no-gutters">
+								{% for item in paragraph.field_pictures %}
+									<div class="col-3 m-1">
+										<img src="{{ file_url(item.entity.field_image.entity.fileuri | image_style('galeria_thumbnail'))}}" data-imagebox="gallery" data-imagebox-src="{{ file_url(item.entity.field_image.entity.fileuri)}}" data-imagebox-caption="{{item.entity.field_title.value}}">
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,23 @@
+<section class="news-initial">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center mb-md-5 mb-1">{{node.label}}</h2>
+				<picture>
+					<img class="news-img" src="{{ file_url(node.field_image.entity.fileuri) }}" alt="{{ node.field_image.alt }}">
+				</picture>
+				<p class="text-center my-md-4 my-1">
+					<span class="author-new mr-4">
+						<i class="fas fa-user"></i>
+						{{node.field_author.entity.name.value}}
+					</span>
+					<span class="date-new">
+						<i class="fas fa-calendar-alt"></i>
+						{{node.created.value|date("m/d/Y")  }}
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	{{content.field_blocks}}
+</section>

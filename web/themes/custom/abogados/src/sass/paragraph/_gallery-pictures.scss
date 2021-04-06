@@ -1,0 +1,17 @@
+section.pictures-gallery {
+    .header.header-gellery {
+        h3 {
+            color: $azul-3;
+        }
+
+        p {
+            color: $azul-4;
+        }
+    }
+
+    .content-gallery {
+        img {
+            width: 100%;
+        }
+    }
+}

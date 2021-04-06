@@ -1,0 +1,23 @@
+.page-node-type-new {
+    .news-initial {
+        h2 {
+            color: $azul-3;
+        }
+
+        .news-img {
+            width: 100%;
+        }
+
+        .author-new,
+        .date-new {
+            color: $azul-4;
+            font-size: 15px;
+        }
+        .full-texto{
+            p{
+                color: $azul-3;
+                font-size: 16px;
+            }
+        }
+    }
+}

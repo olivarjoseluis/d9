@@ -5,10 +5,13 @@ style:
       assets/lib/owlcarousel/owl.carousel.min.css: {}
       assets/css/abogados.style.css: {}
       assets/lib/animate/animate.min.css: {}
+      assets/lib/image-box/imagebox.min.css: {}
       https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap: {type: external}
   js:
     assets/lib/owlcarousel/owl.carousel.min.js: {}
     assets/js/abogados.script.js: {}
+    assets/lib/image-box/imagebox.min.js: {}
+    assets/lib/gallery-img/fslightbox.js: {}
   dependencies:
     - core/jquery
     - core/drupal
