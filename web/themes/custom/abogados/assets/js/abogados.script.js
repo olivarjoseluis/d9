@@ -18116,7 +18116,17 @@ __webpack_require__.r(__webpack_exports__);
           jQuery("body").removeClass('scroll-detected');
         }
       });
-    });
+    }); //Agregar clase para accordión
+
+    jQuery('.accordion-card').click(function () {
+      if (jQuery(this).hasClass('show')) {
+        jQuery(this).removeClass('show');
+      } else {
+        jQuery('.accordion-card').removeClass('show');
+        jQuery(this).addClass('show');
+      }
+    }); //Bibliotecas de imagenes
+
     imagebox.options({
       info: false,
       swipeToChange: true,

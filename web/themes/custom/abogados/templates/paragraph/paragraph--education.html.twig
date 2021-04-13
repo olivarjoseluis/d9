@@ -1,0 +1,25 @@
+<section class="education">
+	<div class="card-education">
+		<div class="row no-gutters">
+			<div class="col-12 col-md-5">
+				<div class="education-level p-3 text-center">
+					<p class="education-title">{{paragraph.field_education_level.entity.name.value}}</p>
+					<p class="education-university">{{paragraph.field_title.value}}</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-7">
+				<div class="education-details p-3">
+					<p><i class="fas fa-map-marker-alt"></i> {{paragraph.field_schedule.value}}</p>
+					<p><i class="fas fa-file"></i> {{paragraph.field_summary_short.value}}</p>
+					<p><i class="fas fa-users"></i> {{paragraph.	field_url.value}}</p>
+					{% if paragraph.field_diploma is not empty %}
+						<p class="url-diploma">
+							<a href="{{paragraph.field_diploma.value}}" target="_blank">Ver Diploma</a>
+						</p>
+
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

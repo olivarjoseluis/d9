@@ -1,0 +1,22 @@
+<div id="accordion">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-10 offset-md-1">
+				{% for item in  paragraph.field_accordion_section %}
+					<div class="accordion-card {{ loop.first ? 'show'}}">
+						<div class="accordion-card-header p-3" id="heading-{{ item.entity.field_title.value|replace({'á':'a','é':'e','í':'i','ó':'o','ú':'u',' ':'-'})|lower }}" data-toggle="collapse" data-target="#{{ item.entity.field_title.value|replace({'á':'a','é':'e','í':'i','ó':'o','ú':'u',' ':'-'})|lower }}" aria-expanded="true" aria-controls="{{ item.entity.field_title.value|replace({'á':'a','é':'e','í':'i','ó':'o','ú':'u',' ':'-'})|lower }}">
+							<p class="accordion-title">{{ item.entity.field_title.value}}</p>
+						</div>
+					</div>
+					<div id="{{ item.entity.field_title.value|replace({'á':'a','é':'e','í':'i','ó':'o','ú':'u',' ':'-'})|lower }}" class="collapse {{ loop.first ? 'show'}}" aria-labelledby="heading-{{ item.entity.field_title.value|replace({'á':'a','é':'e','í':'i','ó':'o','ú':'u',' ':'-'})|lower }}" data-parent="#accordion">
+						<div class="accordion-card-body p-4">
+							{% for element in item.entity.field_blocks %}
+								{{ drupal_entity('paragraph', element.target_id) }}
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

@@ -10009,6 +10009,72 @@ section.pictures-gallery .content-gallery img {
   width: 100%;
 }
 
+#accordion .accordion-card.show .accordion-card-header {
+  background-color: #152c40;
+}
+#accordion .accordion-card.show .accordion-card-header::after {
+  margin-top: -2px;
+  transform: rotate(270deg);
+}
+#accordion .accordion-card .accordion-card-header {
+  background-color: #465e73;
+  cursor: pointer;
+  transition: color 0.15s;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+#accordion .accordion-card .accordion-card-header::after {
+  width: 10px;
+  height: 15px;
+  content: "";
+  background-image: url(/themes/custom/abogados/assets/img/figuras/arrow-right-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transition: all 0.5s;
+  transform: translateY(-50%) rotate(90deg);
+}
+#accordion .accordion-card .accordion-card-header .accordion-title {
+  margin: 0;
+}
+#accordion .collapse .accordion-card-body {
+  background-color: rgba(220, 238, 242, 0.3);
+}
+
+section.education {
+  margin-bottom: 20px;
+}
+section.education .card-education {
+  box-shadow: 0 0 10px 0 rgba(49, 49, 49, 0.3);
+}
+section.education .card-education .education-level {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(21, 44, 64, 0.7);
+}
+section.education .card-education .education-level .education-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+section.education .card-education .education-level .education-university {
+  font-weight: 100;
+}
+section.education .card-education .education-details p {
+  color: rgba(21, 44, 64, 0.98);
+  font-size: 15px;
+}
+section.education .card-education .education-details .url-diploma a {
+  color: #011126;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .page-node-type-new .news-initial h2 {
   color: #152c40;
 }

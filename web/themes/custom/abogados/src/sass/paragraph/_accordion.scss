@@ -1,0 +1,48 @@
+#accordion {
+    .accordion-card.show {
+        .accordion-card-header {
+            background-color: $azul-3;
+
+            &::after {
+                margin-top: -2px;
+                transform : rotate(270deg);
+            }
+        }
+    }
+
+    .accordion-card {
+        .accordion-card-header {
+            background-color: $azul-4;
+            cursor          : pointer;
+            transition      : color 0.15s;
+            border-bottom   : 1px solid $white;
+            position        : relative;
+
+            &::after {
+                width                : 10px;
+                height               : 15px;
+                content              : "";
+                background-image     : url(/themes/custom/abogados/assets/img/figuras/arrow-right-white.png);
+                background-size      : contain;
+                background-repeat    : no-repeat;
+                display              : block;
+                position             : absolute;
+                right                : 20px;
+                top                  : 50%;
+                transition           : all .5s;
+                //background-position: -9px;
+                transform            : translateY(-50%) rotate(90deg);
+            }
+
+            .accordion-title {
+                margin: 0;
+            }
+        }
+    }
+
+    .collapse {
+        .accordion-card-body {
+            background-color: rgba($blanco-azul, .3);
+        }
+    }
+}
