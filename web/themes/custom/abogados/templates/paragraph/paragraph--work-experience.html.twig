@@ -1,11 +1,17 @@
 <section class="work-experience">
 	<div class="card-work-experience">
-		<div class="work-details">
-			<p>{{paragraph.field_url.value}}</p>
-			<p>{{paragraph.field_title.value}}</p>
-		</div>
-		<div class="details-work">
-			{{paragraph.field_summary.value|raw}}
+		<div class="row no-gutters">
+			<div class="col-12 col-md-5">
+				<div class="work-details p-3 text-center">
+					<p class="title-work">{{paragraph.field_url.value}}</p>
+					<p class="date-work">{{paragraph.field_title.value}}</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-7">
+				<div class="work-description p-3">
+					{{paragraph.field_summary.value|raw}}
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

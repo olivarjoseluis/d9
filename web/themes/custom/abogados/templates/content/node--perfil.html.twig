@@ -1,0 +1,45 @@
+<section class="profile">
+	<div class="background-profile">
+		<picture>
+			{{content.field_image}}
+		</picture>
+	</div>
+	<section class="profile-details">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1 text-center">
+					<div class="profile-content p-md-3">
+						<div class="picture-profile">
+							<picture>
+								{{content.field_profile_image}}
+							</picture>
+						</div>
+
+						<h4>{{node.label}}</h4>
+						<p class="profession">{{node.field_profession.value}}</p>
+                        <hr>
+						{% if node.field_enlace is not empty %}
+							<p class="url-hv">
+								<a href="{{node.field_enlace.value}}" target="_blank">CV</a>
+							</p>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="about-me">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1 text-center">
+					{% if node.field_summary is not empty %}
+						<h3 class="text-center">Sobre mi</h3>
+						{{node.field_summary.value|raw}}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</section>
+	{{content.field_additional_elements}}
+</section>

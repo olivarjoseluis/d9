@@ -27,6 +27,7 @@
         "drupal/menu_item_extras": "^2.13",
         "drupal/menu_item_fields": "^1.5",
         "drupal/paragraphs": "^1.12",
+        "drupal/paragraphs_collapsible": "^1.2",
         "drupal/pathauto": "^1.8",
         "drupal/radix": "^4.10",
         "drupal/simplify_menu": "^2.1",

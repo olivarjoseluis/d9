@@ -10075,6 +10075,32 @@ section.education .card-education .education-details .url-diploma a {
   font-weight: 500;
 }
 
+section.work-experience {
+  margin-bottom: 20px;
+}
+section.work-experience .card-work-experience {
+  box-shadow: 0 0 10px 0 rgba(49, 49, 49, 0.3);
+}
+section.work-experience .card-work-experience .work-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(21, 44, 64, 0.7);
+}
+section.work-experience .card-work-experience .work-details .title-work {
+  font-size: 20px;
+  font-weight: 600;
+}
+section.work-experience .card-work-experience .work-details .date-work {
+  font-weight: 100;
+}
+section.work-experience .card-work-experience .work-description p {
+  color: rgba(21, 44, 64, 0.98);
+  font-size: 15px;
+  margin: 0;
+}
+
 .page-node-type-new .news-initial h2 {
   color: #152c40;
 }
@@ -10089,4 +10115,39 @@ section.education .card-education .education-details .url-diploma a {
 .page-node-type-new .news-initial .full-texto p {
   color: #152c40;
   font-size: 16px;
+}
+
+section.profile .background-profile picture img {
+  width: 100%;
+}
+section.profile .profile-details {
+  margin-top: -360px;
+}
+section.profile .profile-details .profile-content {
+  background-color: #152c40;
+}
+section.profile .profile-details .profile-content .picture-profile picture img {
+  width: 170px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #dceef2;
+  border-radius: 50%;
+}
+section.profile .profile-details .profile-content h4 {
+  margin-top: 30px;
+  font-weight: 600;
+}
+section.profile .profile-details .profile-content .profession {
+  font-weight: 100;
+}
+section.profile .profile-details .profile-content hr {
+  width: 35%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(220, 238, 242, 0.5);
+}
+section.profile section.about-me {
+  margin-top: 80px;
 }
