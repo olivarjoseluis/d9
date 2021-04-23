@@ -11,7 +11,7 @@
 						<div class="col-md-8 offset-md-2">
 							<div class="row no-gutters">
 								{% for item in paragraph.field_pictures %}
-									<div class="col-3 m-1">
+									<div class="col-3 p-1">
 										<img src="{{ file_url(item.entity.field_image.entity.fileuri | image_style('galeria_thumbnail'))}}" data-imagebox="gallery" data-imagebox-src="{{ file_url(item.entity.field_image.entity.fileuri)}}" data-imagebox-caption="{{item.entity.field_title.value}}">
 									</div>
 								{% endfor %}

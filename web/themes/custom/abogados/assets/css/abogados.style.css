@@ -9654,6 +9654,14 @@ a.text-dark:hover, a.text-dark:focus {
 .dialog-off-canvas-main-canvas .btn-line::after {
   background-image: url(/themes/custom/abogados/assets/img/figuras/arrows.png);
 }
+.dialog-off-canvas-main-canvas .btn-cv {
+  padding: 5px 30px;
+  background: rgba(220, 238, 242, 0.6);
+  border: unset;
+}
+.dialog-off-canvas-main-canvas .btn-cv::after {
+  content: unset;
+}
 .dialog-off-canvas-main-canvas .owl-nav {
   top: 50%;
   left: 50%;
@@ -9746,6 +9754,10 @@ body.adminimal-admin-toolbar .main-header .block.block--abogados-main-menu {
 }
 .page-node-type-new .page {
   margin-top: 120px;
+}
+
+.page-node-type-perfil .main-header .block.block--abogados-main-menu {
+  background-color: rgba(21, 44, 64, 0.95);
 }
 
 .main-header {
@@ -10117,11 +10129,17 @@ section.work-experience .card-work-experience .work-description p {
   font-size: 16px;
 }
 
+section.profile {
+  position: relative;
+  margin-bottom: 200px;
+}
 section.profile .background-profile picture img {
   width: 100%;
 }
 section.profile .profile-details {
-  margin-top: -360px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 section.profile .profile-details .profile-content {
   background-color: #152c40;
@@ -10148,6 +10166,16 @@ section.profile .profile-details .profile-content hr {
   border: 0;
   border-top: 1px solid rgba(220, 238, 242, 0.5);
 }
+section.profile .profile-details .profile-content .paragraph--type--socials-network a {
+  margin: 0 5px;
+  color: white;
+  padding: 3px;
+}
 section.profile section.about-me {
   margin-top: 80px;
+}
+
+section.about-me p,
+section.about-me h3 {
+  color: #152c40;
 }

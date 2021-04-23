@@ -33,6 +33,7 @@
         "drupal/simplify_menu": "^2.1",
         "drupal/slick_lightbox": "^1.2",
         "drupal/twig_tweak": "^3.0",
+        "drupal/views_rows_wrapper": "^2.0",
         "drush/drush": "^10.3"
     },
     "conflict": {

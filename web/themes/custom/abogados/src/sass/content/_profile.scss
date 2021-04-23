@@ -1,4 +1,7 @@
 section.profile {
+    position     : relative;
+    margin-bottom: 200px;
+
     .background-profile {
         picture {
             img {
@@ -8,7 +11,9 @@ section.profile {
     }
 
     .profile-details {
-        margin-top: -360px;
+        position: absolute;
+        top     : 50%;
+        width   : 100%;
 
         .profile-content {
             background-color: $azul-3;
@@ -41,10 +46,26 @@ section.profile {
                 border       : 0;
                 border-top   : 1px solid rgba($blanco-azul, 0.5);
             }
+
+            .paragraph--type--socials-network {
+                a {
+                    margin : 0 5px;
+                    color  : white;
+                    padding: 3px;
+                }
+            }
         }
     }
 
     section.about-me {
         margin-top: 80px;
+    }
+}
+
+section.about-me {
+
+    p,
+    h3 {
+        color: $azul-3;
     }
 }

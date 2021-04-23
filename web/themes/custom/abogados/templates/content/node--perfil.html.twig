@@ -4,7 +4,7 @@
 			{{content.field_image}}
 		</picture>
 	</div>
-	<section class="profile-details">
+	<div class="profile-details">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-10 offset-md-1 text-center">
@@ -17,17 +17,20 @@
 
 						<h4>{{node.label}}</h4>
 						<p class="profession">{{node.field_profession.value}}</p>
-                        <hr>
+						<hr>
 						{% if node.field_enlace is not empty %}
 							<p class="url-hv">
-								<a href="{{node.field_enlace.value}}" target="_blank">CV</a>
+								<a href="{{node.field_enlace.value}}" class="btn btn-cv" target="_blank">CV</a>
 							</p>
 						{% endif %}
+						{#{{content.field_social_network }}#}
+						{% for item in node.field_social_network %}
+							{{ drupal_entity('paragraph', item.target_id) }}
+						{% endfor %}
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</section>
 	<section class="about-me">
 		<div class="container">
@@ -40,6 +43,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	{{content.field_additional_elements}}
 </section>

@@ -9,14 +9,19 @@
 			</div>
 			<div class="col-12 col-md-7">
 				<div class="education-details p-3">
-					<p><i class="fas fa-map-marker-alt"></i> {{paragraph.field_schedule.value}}</p>
-					<p><i class="fas fa-file"></i> {{paragraph.field_summary_short.value}}</p>
-					<p><i class="fas fa-users"></i> {{paragraph.	field_url.value}}</p>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>
+						{{paragraph.field_schedule.value}}</p>
+					<p>
+						<i class="fas fa-file"></i>
+						{{paragraph.field_summary_short.value}}</p>
+					<p>
+						<i class="fas fa-users"></i>
+						{{paragraph.	field_url.value}}</p>
 					{% if paragraph.field_diploma is not empty %}
 						<p class="url-diploma">
 							<a href="{{paragraph.field_diploma.value}}" target="_blank">Ver Diploma</a>
 						</p>
-
 					{% endif %}
 				</div>
 			</div>

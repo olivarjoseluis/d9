@@ -55,7 +55,7 @@
   // Text
   // -----------------------------------------------------------------------------
   p {
-    color: $blanco-azul;
+    color    : $blanco-azul;
     font-size: 16px;
   }
 
@@ -129,6 +129,16 @@
 
     &::after {
       background-image: url(/themes/custom/abogados/assets/img/figuras/arrows.png);
+    }
+  }
+
+  .btn-cv {
+    padding   : 5px 30px;
+    background: rgba($blanco-azul, .6);
+    border    : unset;
+
+    &::after {
+      content: unset;
     }
   }
 
